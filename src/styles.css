@@ -3,7 +3,7 @@
 
 :root{
     --light: #03021e50;
-    --dark: #03021e;
+    --dark: #0c0633b6;
 }
 
 body{
@@ -131,6 +131,18 @@ nav ul li a:hover{
     justify-content: space-between;
     align-items: flex-end;
     padding: 1rem;
+}
+
+.project-preview::before{
+    background-color: red;
+}
+
+.project-preview:hover{
+    -webkit-transition: 1.0s ease-in;
+    -moz-transition: .01s ease-in;
+    -o-transition: 1.0s ease-in;
+    -ms-transition: 1.0s ease-in;
+    transition: 1.0s ease-in;
 }
 
 .badge{
