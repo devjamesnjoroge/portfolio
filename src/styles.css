@@ -147,12 +147,17 @@ nav ul li a:hover{
         color: #CBE981;
     }
 
+    .bg{
+        display: none;
+    }
+    
     .overlay{
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 10vh;
         margin-bottom: 10vh;
+        background-color: transparent;
     }
     
 }
