@@ -63,7 +63,7 @@ nav ul li a:hover{
     display: none;
 }
 
-.hero, .projects, .about, .stack{
+.hero, .projects, .about, .stack, .contact{
     padding: 3vh 5vw;
 }
 
@@ -196,12 +196,12 @@ svg{
     padding-left: 4vw;
 }
 
-.stack{
+.stack, .contact{
     margin-top: 7vh;
     margin-bottom: 5vh;
 }
 
-.stack h2{
+.stack h2, .contact h2{
     color: #CBE981;
 }
 
@@ -219,6 +219,45 @@ svg{
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 5vh;
+}
+
+.form-group{
+    margin: 3vh 0;
+}
+
+input, textarea, button[type='submit']{
+    width: 20rem;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: small;
+}
+
+input:focus, textarea:focus, textarea{
+    color: #f5f5f5;
+}
+
+input, textarea{
+    background-color: #111A2D;
+    outline: none;
+    border: 2px solid #CBE981;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btn1{
+    background-color: #CBE981;
+    border-radius: 5px;
+    color: #0F1624;
+    border: none;
+}
+
+textarea{
+    height: 10rem;
+}
+
+form{
+    color: #f5f5f5;
 }
 
 @media screen and (max-width: 768px) {

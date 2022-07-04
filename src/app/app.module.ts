@@ -9,6 +9,7 @@ import { LineSeparatorComponent } from './components/line-separator/line-separat
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
 import { StackComponent } from './components/stack/stack.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StackComponent } from './components/stack/stack.component';
     LineSeparatorComponent,
     ProjectsComponent,
     AboutComponent,
-    StackComponent
+    StackComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
