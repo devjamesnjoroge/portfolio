@@ -256,7 +256,22 @@ textarea{
     height: 10rem;
 }
 
+.contact{
+    margin-bottom: 5vh;
+}
+
 form{
+    color: #f5f5f5;
+}
+
+.icons{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icons h4{
     color: #f5f5f5;
 }
 
@@ -322,6 +337,10 @@ form{
     .separator{
         margin: 0;
         padding-left: 0;
+    }
+
+    .icons{
+        padding: 10vh 0;
     }
     
 }
