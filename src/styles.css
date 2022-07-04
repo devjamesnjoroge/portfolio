@@ -10,7 +10,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5vh 10vw; 
+    padding: 5vh 7vw; 
     text-align: center;
 }
 
@@ -56,6 +56,52 @@ nav ul li a:hover{
 
 .nav-footer{
     display: none;
+}
+
+.hero{
+    padding: 5vh 5vw;
+}
+
+.hero .row .col-md-6 h1{
+    color: #CBE981;
+}
+
+.hero .row .col-md-6 p{
+    color: #f5f5f5;
+}
+
+.hero .row .col-md-6 .btn{
+    margin-top: 5vh;
+    display: flex;
+    padding: 0.5em 1.2em;
+    align-items: center;
+    gap: 0.5em;
+    border: 2px solid #CBE981;
+    width: max-content;
+    color: #f5f5f5;
+}
+
+.overlay{
+    padding-right: 7vw;
+}
+
+.sq-bg{
+    background-image: url(assets/98014792.jpeg);
+    height: 14rem;
+    width: 14rem;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.square{
+    position: absolute;
+    height: 14rem;
+    width: 14rem;
+    background-color: #11244A;
+    left: 3rem;
+    top: 3rem;
+    z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
