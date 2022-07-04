@@ -164,6 +164,33 @@ svg{
     cursor: pointer;
 }
 
+.about{
+    padding-bottom: 5vh;
+}
+
+.about h2{
+    color: #CBE981;
+}
+
+.about p{
+    color: #f5f5f5;
+}
+
+.a-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #11244A;
+    padding: 1rem;
+}
+
+.a-card h6, .b-card h6{
+    color: #CBE981;
+}
+
+.a-card h5, .b-card h5{
+    color: #f5f5f5;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -219,6 +246,10 @@ svg{
         margin-top: 10vh;
         margin-bottom: 10vh;
         background-color: transparent;
+    }
+
+    .b-card{
+        margin-top: 4vh;
     }
     
 }
