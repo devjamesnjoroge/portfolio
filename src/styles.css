@@ -110,6 +110,10 @@ nav ul li a:hover{
     z-index: -1;
 }
 
+.projects{
+    margin-bottom: 5vh;
+}
+
 .projects h2{
     color: #CBE981;
 }
