@@ -83,6 +83,7 @@ nav ul li a:hover{
 
 .overlay{
     padding-right: 7vw;
+    justify-content: flex-end;
 }
 
 .sq-bg{
@@ -115,6 +116,9 @@ nav ul li a:hover{
         bottom: 0;
         display: flex;
         border-top: 2px solid #CBE981;
+        z-index: 999;
+        position: fixed;
+        background-color: #0F1624;
     }
 
     .nav-footer ul{
@@ -141,6 +145,14 @@ nav ul li a:hover{
     
     .nav-footer ul li a:hover{
         color: #CBE981;
+    }
+
+    .overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
     
 }
