@@ -8,6 +8,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { LineSeparatorComponent } from './components/line-separator/line-separator.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
+import { StackComponent } from './components/stack/stack.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutComponent } from './components/about/about.component';
     HeroComponent,
     LineSeparatorComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    StackComponent
   ],
   imports: [
     BrowserModule,
