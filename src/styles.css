@@ -118,6 +118,10 @@ nav ul li a:hover{
     color: #CBE981;
 }
 
+.p-card{
+    margin-top: 10vh;
+}
+
 .p-card h4{
     color: #f5f5f5;
 }
@@ -148,6 +152,7 @@ nav ul li a:hover{
     -ms-transition: 1.0s ease-in;
     transition: 1.0s ease-in;
 }
+
 
 .badge{
     background-color: #11244A;

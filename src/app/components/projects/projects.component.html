@@ -2,28 +2,19 @@
 
     <h2>PROJECTS</h2>
 
-    <div class="row">
+    <div class="row" *ngFor="let project of projects">
         <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-card">
-            <style>
-                .project-preview{
-                    background: linear-gradient(to left, var(--light), var(--light)), url('https://res.cloudinary.com/dkz8w5n6k/image/upload/v1656914209/photo_2022-03-21_07-18-41_jbndak.jpg');
-                }
-
-                .project-preview:hover{
-                    background: linear-gradient(to left, var(--dark), var(--dark)), url('https://res.cloudinary.com/dkz8w5n6k/image/upload/v1656914209/photo_2022-03-21_07-18-41_jbndak.jpg');
-                }
-            </style>
-            <div class="project-preview rounded">
+            <div class="project-preview rounded" style="background: linear-gradient(to left, var(--light), var(--light)), url('{{project.image}}');">
              <span class="text-light">Live links</span>
               <div class="svg">
-               <a href="">
+               <a href="{{project.live}}" target="_blank">
                 <svg width="16" height="16" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 33L33 13" stroke="#CBE981" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
                     <path d="M23 35L17 41C13.9 44.1 8.09999 44.1 4.99999 41C1.89999 37.9 1.89999 32.1 4.99999 29L11 23" stroke="#CBE981" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
                     <path d="M35 23L41 17C44.1 13.9 44.1 8.09999 41 4.99999C37.9 1.89999 32.1 1.89999 29 4.99999L23 11" stroke="#CBE981" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
                 </svg>
                </a>
-               <a href="">
+               <a href="{{project.github}}" target="_blank">
                 <svg class="ms-2" width="36" height="36" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M85.446 83.682C85.152 83.682 84.86 83.552 84.662 83.303C84.319 82.87 84.391 82.241 84.824 81.899L107.391 64L84.824 46.102C84.391 45.759 84.319 45.13 84.662 44.698C85.006 44.264 85.635 44.192 86.067 44.536L109.622 63.218C109.86 63.406 110 63.694 110 64C110 64.306 109.86 64.594 109.622 64.783L86.067 83.465C85.883 83.611 85.664 83.682 85.446 83.682Z" fill="#CBE981"/>
                     <path d="M42.554 83.6819C42.336 83.6819 42.117 83.6119 41.933 83.4649L18.378 64.7829C18.14 64.5939 18 64.3059 18 63.9999C18 63.6939 18.14 63.4059 18.378 63.2169L41.933 44.5349C42.366 44.1909 42.995 44.2639 43.338 44.6969C43.681 45.1299 43.609 45.7589 43.176 46.1009L20.609 63.9999L43.176 81.8979C43.609 82.2409 43.681 82.8699 43.338 83.3019C43.141 83.5519 42.849 83.6819 42.554 83.6819Z" fill="#CBE981"/>
@@ -32,13 +23,10 @@
                </a>
               </div>                                       
             </div>
-            <h4 class="mt-2">PIZZA LEGACIES.</h4>
-            <p class="mt-2 text-light">A website where people can add a pizza, toppings to cart and checkout. They can choose whether to be delivered or not.</p>
+            <h4 class="mt-2">{{project.name}}</h4>
+            <p class="mt-2 text-light">{{project.description}}</p>
             <div class="technologies">
-                <span class="badge">Bootstrap</span>
-                <span class="badge">HTML</span>
-                <span class="badge">CSS</span>
-                <span class="badge">JavaScript</span>
+                <span *ngFor="let tech of project.technologies" class="badge">{{tech}}</span>
             </div>
         </div>
     </div>
